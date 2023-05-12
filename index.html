@@ -12,44 +12,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
 
     <!-- navbar -->
-
-    <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <img src="./src/img/logocircus-1.webp" alt="Logo Circus">
-
-        </a>
-        <ul class="nav">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Programación</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-        </ul>
-    </header>
-    <!-- slide/ call to action -->
-    <section class="py-5 text-center" id="hero">
-        <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
-                <h1>Album example</h1>
-                <p class="lead text-body-secondary">Something short and leading about the collection below—its contents,
-                    the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
-                    entirely.</p>
-                <p>
-                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-                </p>
-            </div>
+    <nav id="navbar">
+        <div class="logo-container">
+            <a href="/">
+                <img class="logo" src="./src/img/logocircus-1.webp" alt="Logo Circus">
+            </a>
         </div>
-    </section>
-    <!-- cards -->
-    <div class="album py-5 bg-body-tertiary">
-        <div class="container">
+        <div class="navbar-container">
+            <ul class="navbar">
+                <li class="nav-item p-2"><a class="nav-link page-scroll" href="index.html">Inicio</a></li>
+                <li class="nav-item p-2"><a class="nav-link page-scroll" href="#programacion">Programación</a></li>
+                <li class="nav-item p-2"><a class="nav-link page-scroll" href="#">Nosotros</a></li>
+                <li class="nav-item p-2"><a class="nav-link page-scroll" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- slide/ call to action -->
+    <header class="animate__fadeInUp">
+        <section id="carouselCaptions" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./src/img/banner-call.webp" class="d-block w-100" alt="Imagen del estudio de la radio">
+                    <div class="captions d-flex justify-content-center align-items-center">
+                        <div class="carousel-caption">
+                            <h5>CIRCUS 104.9</h5>
+                            <p>Si querés formar parte de la carpa con más onda</p>
+                            <p>
+                                <a href="#" class="btn button my-2">Contacto</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- cards programacion-->
+    <section id="programacion" class="album py-5 ">
+        <h2>programación</h2>
+        <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
                     <div class="card shadow-sm">
@@ -68,7 +76,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- section card landscape -->
 
     <!-- form contacto -->
@@ -76,7 +84,7 @@
 
     <!-- footer -->
     <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <ul class="nav justify-content-center pb-3 mb-3">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
