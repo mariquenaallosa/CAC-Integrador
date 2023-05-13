@@ -5,12 +5,13 @@
     font-family: 'Montserrat', sans-serif;
 
 }
+
 body {
-    background-color:#252525;
+    background-color: #252525;
 }
 
 nav {
-    background-color:#252525;
+    background-color: #252525;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
@@ -37,11 +38,12 @@ nav ul.navbar li a {
     text-decoration: none;
     vertical-align: bottom;
 }
+
 nav ul.navbar li a:hover {
-    color:#c72121
+    color: #c72121
 }
 
-.carousel-item{
+.carousel-item {
     height: 90vh;
 }
 
@@ -49,20 +51,20 @@ nav ul.navbar li a:hover {
     object-fit: cover;
 }
 
-.carousel-caption{
+.carousel-caption {
     font-weight: 700;
     font-size: 2em;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.carousel-caption h5{
+.carousel-caption h5 {
     font-weight: 700;
     font-size: 2.5em;
 }
 
 .button {
-    background-color: #c72121 ;
+    background-color: #c72121;
     font-size: 0.7em;
     font-weight: 600;
     color: #fff;
@@ -73,29 +75,195 @@ nav ul.navbar li a:hover {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    background-color:#fd1111b9;
+    background-color: #fd1111b9;
 
-  }
-  
-  .button:active {
+}
+
+.button:active {
     transform: translateY(0.5em);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    
-  }
+
+}
+
 /* section programacion */
-  section#programacion h2 {
-        font-size: 3.5em;
-        letter-spacing: 0.025em;
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 1em;
-        color: #fff;
-        font-weight: 800;
+section#programacion h2 {
+    font-size: 106px;
+    letter-spacing: 0.025em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    padding-top: 0.2em;
+    color: #fff;
+    font-weight: 800;
+}
+
+.card {
+    height: 450px;
+}
+
+.card-body {
+    padding-top: 10px;
+}
+
+.card-body,
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.card-body .card-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+/* Seccion Nosotros */
+
+
+
+
+/*Contacto - título*/
+#contacto {
+    padding-top: 0.3em;
+    padding-bottom: 1.70em;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto h2 {
+    font-size: 115px;
+    color: #F3EEE9;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+/*Contacto-formulario*/
+#contacto form {
+    margin: auto 0;
+    margin-top: 0.4em;
+}
+
+#contacto input {
+    padding: 10px;
+    margin: 15px;
+    margin-left: 270px;
+    display: inline-block;
+    border-radius: 5px;
+    border-color: #F3EEE9;
+}
+
+#contacto #nombre,
+#contacto #email,
+#contacto #mensaje {
+    height: 62px;
+    width: 872px;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+
+#contacto #mensaje {
+    height: 200px;
+    margin: 15px;
+    padding: 15px;
+    margin-left: 270px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 20px;
+    border-width: 2px;
+    border-color: #F3EEE9;
+}
+
+#contacto #enviar {
+    width: 872px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #F3EEE9;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    font-size: 20px;
+    margin-left: 268px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+#contacto #enviar:hover {
+    color: #F3EEE9;
+    background-color: #c72121;
+
+}
+
+/* Footer */
+.social-links,.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+    justify-content: center;
+  }
+  
+  .social-btn svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .social-btn #instagram svg {
+    height: 32px;
+    width: 32px;
+  }
+  
+  
+  .social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+    margin-left: 5px;
+  }
+  
+  .social-btn:hover {
+    width: 150px;
+    border-radius: 5px;
+  }
+  
+  .social-btn:hover span {
+    padding: 2px;
+    width: 80px;
+  }
+  
+  #twitter svg {
+    fill: #1da1f2;
+  }
+  
+  #linkedin svg {
+    fill: #0e76a8;
+  }
+  
+  #github {
+    fill: #333;
   }
 
 /* Mobile */
@@ -106,25 +274,91 @@ nav ul.navbar li a:hover {
         justify-content: center;
         align-items: center;
     }
-    .carousel-caption{
+
+    .carousel-caption {
         font-weight: 300;
         font-size: 0.8em;
         transform: translateY(-50%);
     }
-    
-    .carousel-caption h5{
+
+    .carousel-caption h5 {
         font-weight: 900;
         font-size: 2em;
     }
-    .carousel-item{
+
+    .carousel-item {
         height: 50vh;
     }
+
     .carousel-item img {
         height: 50vh;
     }
-    section#programacion h2 {
-        font-size: 2.5em;
-  }
+
+    section#programacion h2,
+    section#contacto h2 {
+        font-size: 2em;
+    }
+
+
+    /*Contacto - título*/
+    #contacto {
+        padding-top: 0.3em;
+        padding-bottom: 1.70em;
+        margin-left: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*Contacto-formulario*/
+    #contacto input {
+        padding: 10px;
+        margin: 15px;
+        margin-left: 270px;
+        display: inline-block;
+        border-radius: 5px;
+        border-color: #F3EEE9;
+    }
+
+    #contacto #nombre {
+        height: 62px;
+        width: 872px;
+        text-align: left;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    #contacto #email {
+        height: 62px;
+        width: 872px;
+        text-align: left;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    #contacto #mensaje {
+        height: 130px;
+        width: 872px;
+        font-size: 20px;
+        padding-left: 20px;
+        padding: 10px;
+        margin: 15px;
+        margin-left: 270px;
+        display: inline-block;
+        border-radius: 5px;
+        font-size: 20px;
+        padding-left: 20px;
+        border-width: 2px;
+        border-color: #F3EEE9;
+    }
+
+    #contacto #enviar {
+        width: 400px;
+        letter-spacing: 0.09em;
+        font-size: 20px;
+
+    }
 
 }
-
