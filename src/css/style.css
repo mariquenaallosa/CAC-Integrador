@@ -88,8 +88,16 @@ nav ul.navbar li a:hover {
     
   }
 
-
-
+  section#programacion h2 {
+        font-size: 2.4em;
+        letter-spacing: 0.025em;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+        color: #fff;
+        font-size: 115px;
+        font-weight: 800;
+  }
 
 /* Mobile */
 @media(max-width:992px) {
@@ -100,13 +108,13 @@ nav ul.navbar li a:hover {
         align-items: center;
     }
     .carousel-caption{
-        font-weight: 700;
+        font-weight: 300;
         font-size: 0.8em;
         transform: translateY(-50%);
     }
     
     .carousel-caption h5{
-        font-weight: 700;
+        font-weight: 900;
         font-size: 2em;
     }
     .carousel-item{
