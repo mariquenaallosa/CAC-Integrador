@@ -206,13 +206,12 @@ div.img-container img {
 #contacto form {
     margin: auto 0;
     margin-top: 0.5em;
+    margin-left: 250px;
 }
 
 #contacto input {
     padding: 10px;
     margin: 15px;
-    margin-left: 270px;
-    display: inline-block;
     border-radius: 5px;
     border-color: #F3EEE9;
 }
@@ -232,8 +231,6 @@ div.img-container img {
     height: 200px;
     margin: 15px;
     padding: 15px;
-    margin-left: 270px;
-    display: inline-block;
     border-radius: 5px;
     font-size: 20px;
     border-width: 2px;
@@ -248,7 +245,6 @@ div.img-container img {
     font-weight: 800;
     letter-spacing: 0.09em;
     font-size: 20px;
-    margin-left: 268px;
     border-radius: 5px;
     transition: all 0.4s ease;
 }
@@ -338,7 +334,7 @@ div.img-container img {
 
     .carousel-caption h5 {
         font-weight: 900;
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .carousel-item {
@@ -350,69 +346,63 @@ div.img-container img {
     }
 
     section#programacion h2,
-    section#contacto h2 {
-        font-size: 2em;
+    section#contacto h2,
+    section#nosotros h2 {
+        font-size: 2.3em;
     }
 
+    /* Nosotros */
+
+    section#nosotros div.img-container{
+        visibility: hidden;
+        display: none;
+    }
+
+    section div.descripcion p {
+        text-align:left;
+    }
 
     /*Contacto - título*/
     #contacto {
         padding-top: 0.3em;
         padding-bottom: 1.70em;
-        margin-left: 70px;
+        margin: 1em auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
 
     /*Contacto-formulario*/
+    #contacto form{
+        margin-left: 0px;
+    }
     #contacto input {
         padding: 10px;
-        margin: 15px;
-        margin-left: 270px;
-        display: inline-block;
+        margin: 15px 30px;
         border-radius: 5px;
         border-color: #F3EEE9;
     }
 
-    #contacto #nombre {
+    #contacto #nombre,#contacto #email,#contacto #mensaje,#contacto #enviar  {
         height: 62px;
-        width: 872px;
+        width: 350px;
         text-align: left;
         font-size: 20px;
-        padding-left: 20px;
-    }
-
-    #contacto #email {
-        height: 62px;
-        width: 872px;
-        text-align: left;
-        font-size: 20px;
-        padding-left: 20px;
+        padding-left: 15px;
     }
 
     #contacto #mensaje {
         height: 130px;
-        width: 872px;
-        font-size: 20px;
-        padding-left: 20px;
-        padding: 10px;
-        margin: 15px;
-        margin-left: 270px;
-        display: inline-block;
-        border-radius: 5px;
-        font-size: 20px;
-        padding-left: 20px;
-        border-width: 2px;
-        border-color: #F3EEE9;
+        margin-left: 30px;
     }
 
-    #contacto #enviar {
-        width: 400px;
+    #contacto #enviar{
         letter-spacing: 0.09em;
         font-size: 20px;
+        text-align: center;
 
     }
 
