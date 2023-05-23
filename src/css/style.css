@@ -187,7 +187,6 @@ div.img-container img {
 #contacto {
     padding-top: 1em;
     padding-bottom: 1.70em;
-    margin-left: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,15 +197,16 @@ div.img-container img {
     font-size: 115px;
     color: #F3EEE9;
     font-weight: 800;
-    text-align: center;
     text-transform: uppercase;
+    margin-left: 40px;
+
 }
 
 /*Contacto-formulario*/
 #contacto form {
     margin: auto 0;
     margin-top: 0.5em;
-    margin-left: 250px;
+    margin-left: 320px;
 }
 
 #contacto input {
