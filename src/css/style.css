@@ -182,9 +182,30 @@ div.img-container img {
 
 }
 
+/* Publicidad */
+#publicidad {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+#publicidad h2 {
+    font-size: 106px;
+    letter-spacing: 0.025em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    padding-top: 0.1em;
+    font-weight: 800;
+}
 
 /*Contacto - título*/
 #contacto {
+    height: 80vh;
     padding-top: 1em;
     padding-bottom: 1.70em;
     display: flex;
@@ -198,7 +219,6 @@ div.img-container img {
     color: #F3EEE9;
     font-weight: 800;
     text-transform: uppercase;
-    margin-left: 40px;
 
 }
 
@@ -206,7 +226,6 @@ div.img-container img {
 #contacto form {
     margin: auto 0;
     margin-top: 0.5em;
-    margin-left: 320px;
 }
 
 #contacto input {
@@ -366,7 +385,6 @@ div.img-container img {
     #contacto {
         padding-top: 0.3em;
         padding-bottom: 1.70em;
-        margin: 1em auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -376,9 +394,6 @@ div.img-container img {
 
 
     /*Contacto-formulario*/
-    #contacto form{
-        margin-left: 0px;
-    }
     #contacto input {
         padding: 10px;
         margin: 15px 30px;
