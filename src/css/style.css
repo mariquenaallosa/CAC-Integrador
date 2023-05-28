@@ -10,6 +10,7 @@ body {
     background-color: #252525;
 }
 
+
 nav {
     background-color: #252525;
     color: #fff;
@@ -183,8 +184,10 @@ div.img-container img {
 }
 
 
+
 /*Contacto - título*/
 #contacto {
+    height: 80vh;
     padding-top: 1em;
     padding-bottom: 1.70em;
     display: flex;
@@ -198,7 +201,6 @@ div.img-container img {
     color: #F3EEE9;
     font-weight: 800;
     text-transform: uppercase;
-    margin-left: 40px;
 
 }
 
@@ -206,7 +208,6 @@ div.img-container img {
 #contacto form {
     margin: auto 0;
     margin-top: 0.5em;
-    margin-left: 320px;
 }
 
 #contacto input {
@@ -366,7 +367,6 @@ div.img-container img {
     #contacto {
         padding-top: 0.3em;
         padding-bottom: 1.70em;
-        margin: 1em auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -376,9 +376,6 @@ div.img-container img {
 
 
     /*Contacto-formulario*/
-    #contacto form{
-        margin-left: 0px;
-    }
     #contacto input {
         padding: 10px;
         margin: 15px 30px;
