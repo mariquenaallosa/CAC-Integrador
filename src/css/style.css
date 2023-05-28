@@ -10,6 +10,7 @@ body {
     background-color: #252525;
 }
 
+
 nav {
     background-color: #252525;
     color: #fff;
@@ -182,26 +183,7 @@ div.img-container img {
 
 }
 
-/* Publicidad */
-#publicidad {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-}
 
-#publicidad h2 {
-    font-size: 106px;
-    letter-spacing: 0.025em;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 0.5em;
-    padding-top: 0.1em;
-    font-weight: 800;
-}
 
 /*Contacto - título*/
 #contacto {

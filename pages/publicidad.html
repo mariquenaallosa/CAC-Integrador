@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circus</title>
+    <link rel="shortcut icon" href="../src/img/logocircus-1.webp" type="image/webp">
+    <link rel="stylesheet" href="../src/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/publicidad.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav id="navbar">
+        <div class="logo-container">
+            <a href="/">
+                <img class="logo" src="../src/img/logocircus-1.webp" alt="Logo Circus">
+            </a>
+        </div>
+        <div class="navbar-container">
+            <ul class="navbar">
+                <li class="nav-item p-2"><a class="nav-link page-scroll" href="../index.html">Inicio</a></li>
+                <li class="nav-item p-2"><a class="nav-link page-scroll" href="../index.html">Programación</a></li>
+                <li class="nav-item p-2"><a class="nav-link page-scroll" href="../index.html">Nosotros</a></li>
+                <li class="nav-item p-2"><a class="nav-link page-scroll" href="../index.html">Contacto</a></li>
+                <li class="nav-item p-2"><a class="nav-link page-scroll" href="#publicidad">Publicidad</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- section publicidad -->
+    <section id="publicidad">
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Malabarista</h3>
+                                <p class="card-text">Tiene un descuento</p>
+                                <p class="card-text fw-bold">80%</p>
+                                <p class="text-muted">
+                                    * Presentar documentación
+                                </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Acróbata</h3>
+                            <p class="card-text">Tiene un descuento</p>
+                            <p class="card-text fw-bold">50%</p>
+                            <p class="text-muted">
+                                * Presentar documentación
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Domador</h3>
+                            <p class="card-text">Tiene un descuento</p>
+                            <p class="card-text fw-bold">15%</p>
+                            <p class="text-muted">
+                                * Presentar documentación
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="mt-3"> Valor publicidad $2000</h4>
+        <form id="form-publicidad" class="mt-3  col-9 container" action="#">
+            <div class="row justify-content-center">
+                <div class="mb-3 col-sm-6">
+                    <input type="text" id="formControlNombre" class="form-control" placeholder="Nombre" required>
+                </div>
+                <div class="mb-3 col-sm-6">
+                    <input type="text" id="formControlApellido" class="form-control" placeholder="Apellido" required>
+                </div>
+            </div>
+            <div class="form col-sm-12">
+                <input type="email" id="formControlCorreo" class="form-control" placeholder="Correo" required>
+            </div>
+            <div class="mt-3 row justify-content-center">
+                <div class="mb-3 col-sm-6">
+                    <label for="formControlCantidad" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" id="cantidad" placeholder="Cantidad" name="cantidad" min="1" max="20" required>
+                </div>
+                <div class="mb-3 col-sm-6">
+                    <label for="formControlCategoria" class="form-label">Categoria</label>
+                    <select class="form-control" id="categoria" aria-label="1" name="categoria">
+                        <option selected="" value="Malabarista">Malabarista</option>
+                        <option value="Acróbata">Acróbata</option>
+                        <option value="Domador">Domador</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="totalPagar" class="totalPagar mb-4 mt-2">
+                <div class="d-flex pt-2 pb-2">
+                    <span class="text-end ms-4">Total a pagar: $</span>
+                    <span id="totalPagarSpan">340.00</span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="btnDelete" class="btn btn-publicidad me-2 w-50">Borrar</button>
+                <button type="button" id="btnSummary" class="btn btn-publicidad ms-2 w-50">Resumen</button>
+            </div>
+        </form>
+
+    </section>
+    <!-- footer -->
+    <footer class="py-3 my-4">
+        <div class="social-links">
+            <div id="twitter" class="social-btn flex-center">
+                <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                    </path>
+                </svg><span>@circus1049</span>
+            </div>
+
+            <div id="instagram" class="social-btn flex-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" height="30" width="30">
+                    <path
+                        d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z" />
+                </svg><span>@circus1049</span>
+            </div>
+
+            <div id="web" class="social-btn flex-center">
+                <svg viewBox="3 3 18 18" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path xmlns="http://www.w3.org/2000/svg"
+                        d="M19,4 C20.1046,4 21,4.89543 21,6 L21,18 C21,19.1046 20.1046,20 19,20 L5,20 C3.89543,20 3,19.1046 3,18 L3,6 C3,4.89543 3.89543,4 5,4 L19,4 Z M19,10 L5,10 L5,17 C5,17.51285 5.38604429,17.9355092 5.88337975,17.9932725 L6,18 L18,18 C18.51285,18 18.9355092,17.613973 18.9932725,17.1166239 L19,17 L19,10 Z M6,6 C5.44772,6 5,6.44772 5,7 C5,7.55228 5.44772,8 6,8 C6.55228,8 7,7.55228 7,7 C7,6.44772 6.55228,6 6,6 Z M9,6 C8.44772,6 8,6.44772 8,7 C8,7.55228 8.44772,8 9,8 C9.55228,8 10,7.55228 10,7 C10,6.44772 9.55228,6 9,6 Z M12,6 C11.4477,6 11,6.44772 11,7 C11,7.55228 11.4477,8 12,8 C12.5523,8 13,7.55228 13,7 C13,6.44772 12.5523,6 12,6 Z">
+                    </path>
+                </svg><span>gentecononda.com</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScrip local -->
+    <script src="../js/script.js"></script>
+    <!-- Bootstrap JavaScript-->
+    <script src="../src/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
