@@ -8,7 +8,7 @@ const form = document.getElementById("form-publicidad");
 //console.log(form);
 
 const discountCategory = {
-    Malabariste: 0.80,
+    Malabarista: 0.80,
     Acróbata: 0.50,
     Domador: 0.15,
 };
@@ -17,9 +17,9 @@ btnSummary.addEventListener("click", (e) => {
     e.preventDefault();
     
     const cantidad = parseInt(form["cantidad"].value);
-    console.log(cantidad);
     const categoria = form["categoria"].value;
     const total = cantidad * 2000;
+
 
     const totalToPay = total - (total * discountCategory[categoria]);
     document.getElementById("totalPagarSpan").innerText = totalToPay;

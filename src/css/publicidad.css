@@ -10,7 +10,7 @@
 }
 
 #publicidad h3 {
-    font-size: 40px;
+    font-size: 38px;
     letter-spacing: 0.025em;
     text-align: center;
     text-transform: uppercase;
@@ -20,7 +20,7 @@
 }
 
 #publicidad h4 {
-    font-size: 36px;
+    font-size: 34px;
     letter-spacing: 0.025em;
     text-align: center;
     text-transform: uppercase;
@@ -88,3 +88,14 @@
     display: none;
 }
 
+/* Mobile */
+@media(max-width:992px) {
+    #publicidad h3 {
+        font-size: 30px;
+    }
+    
+    #publicidad h4 {
+        font-size: 28px;
+    }
+
+}
