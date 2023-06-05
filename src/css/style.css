@@ -187,22 +187,22 @@ div.img-container img {
 
 /*Contacto - título*/
 #contacto {
-    height: 80vh;
-    padding-top: 1em;
+    height: 100vh;
     padding-bottom: 1.70em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 #contacto h2 {
     font-size: 115px;
+    padding-top: 0.5em;
     color: #F3EEE9;
+    margin: auto;
     font-weight: 800;
-    text-transform: uppercase;
-
-}
+    text-transform: uppercase;}
 
 /*Contacto-formulario*/
 #contacto form {
@@ -353,7 +353,6 @@ div.img-container img {
     }
 
     /* Nosotros */
-
     section#nosotros div.img-container{
         visibility: hidden;
         display: none;
