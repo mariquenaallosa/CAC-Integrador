@@ -82,10 +82,12 @@
             </div>
         </div>
         <h4 class="mt-3"> Valor publicidad $2000</h4>
-        <form id="form-publicidad" class="mt-3  col-9 container" action="#">
+        <form id="form-advertising" class="mt-3  col-9 container" action="#">
             <div class="row justify-content-center">
                 <div class="mb-3 col-sm-6">
-                    <input type="text" id="formControlNombre" class="form-control" placeholder="Nombre" required>
+                    <input type="text" id="formControlNombre" class="form-control" 
+                    id="name"
+                    placeholder="Nombre" required>
                 </div>
                 <div class="mb-3 col-sm-6">
                     <input type="text" id="formControlApellido" class="form-control" placeholder="Apellido" required>
@@ -97,11 +99,11 @@
             <div class="mt-3 row justify-content-center">
                 <div class="mb-3 col-sm-6">
                     <label for="formControlCantidad" class="form-label">Cantidad</label>
-                    <input type="number" class="form-control" id="cantidad" placeholder="Cantidad" name="cantidad" min="1" max="20" required>
+                    <input type="number" class="form-control" id="quantity" placeholder="Cantidad" name="cantidad" min="1" max="20" required>
                 </div>
                 <div class="mb-3 col-sm-6">
                     <label for="formControlCategoria" class="form-label">Categoria</label>
-                    <select class="form-control" id="categoria" aria-label="1" name="categoria">
+                    <select class="form-control" id="category" aria-label="1" name="category">
                         <option selected="" value="Malabarista">Malabarista</option>
                         <option value="Acróbata">Acróbata</option>
                         <option value="Domador">Domador</option>
