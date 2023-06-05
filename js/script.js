@@ -4,7 +4,7 @@ const btnSummary = document.getElementById("btnSummary");
 //console.log(btnSummary);
 const btnDelete = document.getElementById("btnDelete");
 //console.log(btnDelete);
-const form = document.getElementById("form-publicidad");
+const form = document.getElementById("form-advertising");
 //console.log(form);
 
 const discountCategory = {
@@ -16,12 +16,12 @@ const discountCategory = {
 btnSummary.addEventListener("click", (e) => {
     e.preventDefault();
     
-    const cantidad = parseInt(form["cantidad"].value);
-    const categoria = form["categoria"].value;
-    const total = cantidad * 2000;
+    const quantity = parseInt(form["quantity"].value);
+    const category = form["category"].value;
+    const total =  quantity * 2000;
 
 
-    const totalToPay = total - (total * discountCategory[categoria]);
+    const totalToPay = total - (total * discountCategory[category]);
     document.getElementById("totalPagarSpan").innerText = totalToPay;
 
     divResult.style.display = "block";
