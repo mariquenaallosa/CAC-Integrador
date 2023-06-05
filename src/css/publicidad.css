@@ -40,7 +40,7 @@
 
 
 
-#form-publicidad input , #form-publicidad select {
+#form-advertising input , #form-advertising select {
     height: 62px;
     text-align: left;
     font-size: 20px;
@@ -51,14 +51,14 @@
     border-color: #3434347e;
 }
 
-#form-publicidad .form-label{
+#form-advertising .form-label{
     font-size: 20px;
     font-weight: 600;
     padding-left: 2px;
     margin:  0 15px;
 }
 
-#form-publicidad .btn-publicidad {
+#form-advertising .btn-publicidad {
     width: 872px;
     text-align: center;
     text-transform: uppercase;
@@ -71,7 +71,7 @@
     transition: all 0.4s ease;
 }
 
-#form-publicidad .btn-publicidad:hover {
+#form-advertising .btn-publicidad:hover {
     color: #ffffff;
     background-color: #c72121;
     transform: scale(103%);
