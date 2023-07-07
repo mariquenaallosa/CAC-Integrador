@@ -7,6 +7,8 @@ const btnDelete = document.getElementById("btnDelete");
 const form = document.getElementById("form-advertising");
 //console.log(form);
 
+console.log(form["advertising-name"]);
+
 const discountCategory = {
     Malabarista: 0.80,
     Acróbata: 0.50,
@@ -15,7 +17,7 @@ const discountCategory = {
 
 btnSummary.addEventListener("click", (e) => {
     e.preventDefault();
-    
+    if (true){
     const quantity = parseInt(form["quantity"].value);
     const category = form["category"].value;
     const total =  quantity * 2000;
@@ -25,6 +27,7 @@ btnSummary.addEventListener("click", (e) => {
     document.getElementById("totalPagarSpan").innerText = totalToPay;
 
     divResult.style.display = "block";
+    }
 });
 
 btnDelete.addEventListener("click", (e) => {
