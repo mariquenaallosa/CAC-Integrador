@@ -12,11 +12,6 @@ const lastNameInput = document.getElementById("lastName");
 const emailInput = document.getElementById("email");
 const quantityInput = document.getElementById("quantity");
 const categorySelect = document.getElementById("category");
-// Capturar los valores ingresados
-const firstName = nameInput.value;
-const lastName = lastNameInput.value;
-const email = emailInput.value;
-const quantity = parseFloat(quantityInput.value);
 
 const discountCategory = {
   Malabarista: 0.8,
@@ -25,11 +20,22 @@ const discountCategory = {
 };
 
 btnSummary.addEventListener("click", (e) => {
-  if (!firstName && !lastName && !email) {
-    alert("Por favor, completa todos los campos del formulario.");
+  e.preventDefault;
+
+  // Capturar los valores ingresados
+  const firstName = nameInput.value;
+  const lastName = lastNameInput.value;
+  const email = emailInput.value;
+  const quantity = parseFloat(quantityInput.value);
+
+  if (!firstName || !lastName || !email || !quantity) {
+    alert('Por favor, completa todos los campos del formulario.');
+    return
+  }
+  if (!lastName) {
+    alert("Por favor, ingrese un apellido");
     return;
   }
-
   if (!validaEmail(email)) {
     alert("Por favor, ingresa un correo electrónico válido.");
     return;
@@ -39,18 +45,15 @@ btnSummary.addEventListener("click", (e) => {
     alert("La cantidad debe ser mayor que 1.");
     return;
   }
-  
-    const quantity = parseInt(form["quantity"].value);
-    const category = form["category"].value;
-    const total = quantity * 2000;
 
-    const totalToPay = total - total * discountCategory[category];
-    document.getElementById("totalPagarSpan").innerText = totalToPay;
+  const category = form["category"].value;
+  const total = quantity * 2000;
 
-    divResult.style.display = "block";
-  
+  const totalToPay = total - total * discountCategory[category];
+  document.getElementById("totalPagarSpan").innerText = totalToPay;
+
+  divResult.style.display = "block";
 });
-
 
 const validaEmail = (email) => {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
