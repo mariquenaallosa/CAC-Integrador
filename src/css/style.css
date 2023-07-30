@@ -47,6 +47,9 @@ ul.navbar-nav li a:hover {
     font-size: 106px;
     text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
+.carousel-caption p {
+    font-size: 0.9em;
+}
 
 .button {
     background-color: #c72121;
@@ -166,26 +169,24 @@ div.img-container img {
 
 }
 
-
-
-/*Contacto - título*/
-#contacto {
-    height: 100vh;
-    padding-bottom: 1.70em;
+/*Contacto*/
+section#contacto {
+    padding-bottom: 0.6em;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
-#contacto h2 {
+/*Contacto - título*/
+
+section#contacto h2 {
     font-size: 115px;
-    padding-top: 0.5em;
+    padding-top: 0.3em;
     color: #F3EEE9;
-    margin: auto;
+    text-align: center;
     font-weight: 800;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+}
 
 /*Contacto-formulario*/
 #contacto form {
