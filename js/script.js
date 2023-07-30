@@ -35,3 +35,13 @@ btnDelete.addEventListener("click", (e) => {
     divResult.style.display = "none";
     form.reset();
 });
+
+
+// Selección de categoría
+const card = document.querySelector(".card");
+
+card.addEventListener("click",(e) => {
+    e.preventDefault();
+    card.className = ("card card-select")
+
+});
