@@ -41,7 +41,7 @@ ul.navbar-nav li a:active {
 
 .carousel-caption {
     font-weight: 600;
-    font-size: 2em;
+    font-size: 2.2em;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -52,7 +52,7 @@ ul.navbar-nav li a:active {
     text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .carousel-caption p {
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .button {
@@ -317,8 +317,95 @@ section#contacto h2 {
     }
 
     .carousel-caption {
-        font-weight: 300;
-        font-size: 0.7em;
+        font-size: 0.9em;
+        transform: translateY(-50%);
+    }
+
+    .carousel-caption h5 {
+        font-weight: 900;
+        font-size: 5em;
+    }
+
+    .carousel-item {
+        height: 50vh;
+    }
+
+    .carousel-item img {
+        height: 50vh;
+    }
+
+    section#programacion h2,
+    section#contacto h2,
+    section#nosotros h2 {
+        font-size: 2em;
+    }
+
+    /* Nosotros */
+    section#nosotros {
+        height:930px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+    }
+
+    section#nosotros div.img-container{
+        visibility: hidden;
+        display: none;
+    }
+
+    section div.descripcion p {
+        text-align:left;
+        padding-top: 0.6em;
+    }
+
+    /*Contacto - título*/
+    #contacto {
+        padding-top: 0.3em;
+        padding-bottom: 1.70em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+
+
+    /*Contacto-formulario*/
+    #contacto input {
+        padding: 12px;
+        margin-top: 1px;     
+        border-radius: 5px;
+        border-color: #F3EEE9;
+    }
+
+    #contacto #nombre,#contacto #email,#contacto #mensaje,#contacto #enviar  {
+        height: 62px;
+        width: 250px;
+        text-align: left;
+        font-size: 20px;
+        padding-left: 15px;
+    }
+
+    #contacto #mensaje {
+        height: 130px;
+
+       
+    }
+
+    #contacto #enviar{
+        letter-spacing: 0.09em;
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .carousel-caption {
+        font-size: 0.5em;
         transform: translateY(-50%);
     }
 
