@@ -224,6 +224,7 @@ section#contacto h2 {
     font-size: 20px;
     border-width: 2px;
     border-color: #F3EEE9;
+    resize: none;
 }
 
 #contacto #enviar {
@@ -374,8 +375,7 @@ section#contacto h2 {
     /*Contacto-formulario*/
     #contacto input {
         padding: 12px;
-        margin-top: 1px;
-        margin-left: -30px;
+        margin-top: 1px;     
         border-radius: 5px;
         border-color: #F3EEE9;
     }
@@ -390,7 +390,8 @@ section#contacto h2 {
 
     #contacto #mensaje {
         height: 130px;
-        margin-left: -30px;
+
+       
     }
 
     #contacto #enviar{

@@ -13,6 +13,14 @@ const emailInput = document.getElementById("email");
 const quantityInput = document.getElementById("quantity");
 const categorySelect = document.getElementById("category");
 
+
+// Seleccionar categoría
+const card1 = document.querySelector(".card-1");
+const card2 = document.querySelector(".card-2");
+const card3 = document.querySelector(".card-3");
+
+
+
 const discountCategory = {
   Malabarista: 0.8,
   Acróbata: 0.5,
@@ -65,12 +73,12 @@ btnDelete.addEventListener("click", (e) => {
   e.preventDefault();
   divResult.style.display = "none";
   form.reset();
+  card1.classList.remove("card-selected");
+  card2.classList.remove("card-selected");
+  card3.classList.remove("card-selected");
 });
 
-// Seleccionar categoría
-const card1 = document.querySelector(".card-1");
-const card2 = document.querySelector(".card-2");
-const card3 = document.querySelector(".card-3");
+
 
 card1.addEventListener("click", (e) => {
   e.preventDefault;

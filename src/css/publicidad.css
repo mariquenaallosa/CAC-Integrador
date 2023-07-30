@@ -73,6 +73,7 @@
     font-size: 20px;
     border-radius: 5px;
     transition: all 0.4s ease;
+
 }
 
 #form-advertising .btn-publicidad:hover {
@@ -104,5 +105,21 @@
     #publicidad h4 {
         font-size: 28px;
     }
+
+    .btn-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #form-advertising .btn-publicidad {
+        width: 100% !important;
+        margin-top: 5px;
+    }
+
+}
+
+@media(max-width:768px) {
 
 }
